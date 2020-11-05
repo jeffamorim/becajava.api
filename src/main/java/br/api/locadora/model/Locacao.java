@@ -6,7 +6,7 @@ import javax.persistence.*;
 public class Locacao {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id;
+	private Long Id;
 	private int Qtd_Dias;
 
 	@ManyToOne
@@ -21,11 +21,11 @@ public class Locacao {
 	@JoinColumn(name = "PagamentoId")
 	private Pagamento Pagamento;
 
-	public int getId() {
+	public Long getId() {
 		return Id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		Id = id;
 	}
 
@@ -60,7 +60,7 @@ public class Locacao {
 	public void setPagamento(Pagamento pagamento) {
 		Pagamento = pagamento;
 	}
-	
+
 	
 
 }

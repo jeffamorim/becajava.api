@@ -7,14 +7,14 @@ import javax.persistence.*;
 public class Veiculo {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int Id;
+	private Long Id;
 	private String Marca;
 	private String Modelo;
 	private String Cor;
-	public int getId() {
+	public Long getId() {
 		return Id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		Id = id;
 	}
 	public String getMarca() {
@@ -35,6 +35,7 @@ public class Veiculo {
 	public void setCor(String cor) {
 		Cor = cor;
 	}
-	
 
+	
+	
 }
